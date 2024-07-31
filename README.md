@@ -1,5 +1,5 @@
 ## Welcome
-- Navbar
+- Navbar__
 ![alt text](image.png)
 It conatins three options, select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon
 
