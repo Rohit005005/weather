@@ -9,8 +9,8 @@ function Info({ record, daynum, unit }) {
       <div className="flex p-0 mb-5 w-[100%]  justify-between items-center">
         <div className=" shadow-[0px_0px_400px_0px_#3182ce] rounded-2xl text-black bg-white bg-opacity-60 p-5 w-[30%] flex flex-col justify-center items-center">
           {/*Max and Min temperature*/}
-          <p className="text-lg sm:text-3xl font-extrabold">Temperature</p>
-          <div className=" flex gap-3 sm:gap-6 p-2">
+          <p className="text-md sm:text-3xl font-extrabold">Temperature</p>
+          <div className=" flex gap-2 sm:gap-6 p-2">
             <p className="text-lg sm:text-3xl font-semibold">
               {record.days[daynum].tempmax + degree}
             </p>
@@ -23,7 +23,7 @@ function Info({ record, daynum, unit }) {
         <div className=" shadow-[0px_0px_400px_0px_#3182ce] rounded-2xl text-black bg-white bg-opacity-60 p-5 w-[30%] flex flex-col justify-center items-center">
           {/*Max and Min feel like temperature*/}
           <p className="text-lg sm:text-3xl font-extrabold whitespace-nowrap">Feels like</p>
-          <div className="flex gap-3  sm:gap-6 p-2">
+          <div className="flex gap-2  sm:gap-6 p-2">
             <p className="text-lg sm:text-3xl font-semibold">
               {record.days[daynum].feelslikemax+ degree}
             </p>
