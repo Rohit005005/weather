@@ -1,7 +1,7 @@
 ## Welcome
-- Navbar
-![alt text](image.png)
-It conatins three options, select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon
+- Navbar<br/>
+![alt text](image.png)<br/>
+It conatins three options, select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon.<br/><br/>
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
