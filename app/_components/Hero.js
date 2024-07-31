@@ -3,13 +3,13 @@ import React from 'react'
 
 function Hero({record,daynum}) {
   return (
-    <div className="flex gap-10 justify-between  w-[70%]">
-            <div className=" flex flex-col justify-center items-start px-10 rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] text-black">
+    <div className="flex gap-3 sm:gap-10 justify-between sm:w-[70%]">
+            <div className="  flex flex-col justify-center items-start p-5 sm:px-10 rounded-2xl shadow-[0px_0px_400px_0px_#3182ce] text-black">
               <div>
-                <p className="text-5xl font-extrabold">{record.address.toUpperCase()}</p>
+                <p className="sm:text-4xl  md:text-5xl  text-xl font-extrabold">{record.address.toUpperCase()}</p>
               </div>
               <div>
-                <p className="mt-3 text-2xl font-normal text-gray-500">
+                <p className="mt-1 sm:mt-3 sm:text-xl md:text-2xl text:lg font-normal text-gray-500">
                   {record.days[daynum].conditions}
                 </p>
               </div>

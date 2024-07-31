@@ -94,11 +94,11 @@ export default function Home() {
         </div>
       ) : (
         record && (
-          <div className=" px-8 flex flex-col gap-5 justify-center items-center z-10 w-full">
+          <div className="px-4 sm:px-8 flex flex-col gap-5 justify-center items-center z-10 w-full">
             <Navbar state={setstate} unit={seunit} loc={getloc} />
             <Hero record={record} daynum={daynum} />
             <Info record={record} daynum={daynum} unit={unit} />
-            <Future record={record} daynum={setdaynum} index1={daynum}/>
+            <Future record={record} daynum={setdaynum} index1={daynum} unit={unit}/>
             <div className="flex items-center bg-transparent shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-opacity-50 text-white text-sm py-1 px-2 rounded-md fixed bottom-5 right-5 cursor-pointer hover:border-2 hover:text-lg transition-all">
             <Popover>
                 <PopoverTrigger className="flex items-center gap-2">
