@@ -1,10 +1,29 @@
 ## Welcome
 - Navbar<br/>
 ![alt text](image.png)<br/>
-It conatins three options, select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon.<br/><br/>
+Select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon.<br/><br/>
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+<br/><br/><br/>
+
+- Weather data<br/>
+![alt text](image-4.png)<br/>
+It will show the weather data of the selected city.
+<br/><br/><br/>
+
+-Forecast<br/>
+![<alt text>](image-5.png)<br/>
+It will show the cards for next 14 days forecast.<br/>
+Select the card according do the date you want weather data for.<br/>
+![alt text](image-6.png)<br/>
+After selecting it will show the data of that date above.<br/>
+![alt text](image-7.png)
+<br/><br/><br/>
+
+-Connect<br/>
+Click on the popover to get connect....<br/>
+![alt text](image-8.png)
 
 ## Getting Started
 
