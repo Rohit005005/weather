@@ -5,6 +5,7 @@ function Future({ record, daynum ,index1,unit}) {
   unit == "metric" ? (degree = "c") : (degree = "f");
   return (
     <div>
+      {/*Shows the 14 day forecast of the weather*/}
       <div className="flex justify-center items-center">
         <p className="text-xl sm:text-3xl text-black my-5 sm:my-10 px-10 sm:pt-5 pt-2 pb-3 font-extrabold rounded-full bg-white shadow-[0px_50px_600px_0px_#2b6cb0] flex flex-col justify-center items-center">
           14 day Forecast
@@ -12,7 +13,7 @@ function Future({ record, daynum ,index1,unit}) {
           Click on them to see details
         </p>
         </p>
-        
+        {/*User can click on the cards to view detailed weather info of that day*/}
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-5 mb-20">
         {record.days.slice(1).map((day, index) => (

@@ -16,7 +16,8 @@ import Image from "next/image";
 import { Instagram, LinkedinIcon } from "lucide-react";
 
 export default function Home() {
-  const [state, setstate] = useState("london");
+  //Setting states
+  const [state, setstate] = useState("delhi");
   const [unit, seunit] = useState("metric");
   const [daynum, setdaynum] = useState(0);
   const [record, setrecord] = useState(null);
@@ -25,6 +26,7 @@ export default function Home() {
   const [loc, getloc] = useState(false);
   const [loading, setloading] = useState(false);
 
+  //fetching weather data using Visual Crossing Api
   useEffect(() => {
     const weather = async () => {
       setloading(true);
@@ -43,6 +45,7 @@ export default function Home() {
     weather();
   }, [state, unit]);
 
+  //fetching user current location as latitude and longitude
   useEffect(() => {
     if (loc) {
       navigator.permissions.query({ name: "geolocation" }).then((result) => {
@@ -66,6 +69,7 @@ export default function Home() {
     }
   }, [loc]);
 
+  //fetching user current city using geopify api and previously fetched latitude & longitude
   useEffect(() => {
     if (latitude && longitude) {
       const getstate = async () => {
@@ -88,6 +92,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center">
+      {/* showing a loading icon until the weather data is fetched */}
       {loading ? (
         <div className="flex items-center justify-center fixed inset-0  z-50">
           <LoaderCircle className="text-black animate-spin" size={100} />
@@ -95,11 +100,15 @@ export default function Home() {
       ) : (
         record && (
           <div className="px-4 sm:px-8 flex flex-col gap-5 justify-center items-center z-10 w-full">
+            {/*this div only work if weather data is set in the record state*/}
+
+            {/*Other Componenets*/}
             <Navbar state={setstate} unit={seunit} loc={getloc} />
             <Hero record={record} daynum={daynum} />
             <Info record={record} daynum={daynum} unit={unit} />
             <Future record={record} daynum={setdaynum} index1={daynum} unit={unit}/>
             <div className="flex items-center bg-transparent shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] bg-opacity-50 text-white text-sm py-1 px-2 rounded-md fixed bottom-5 right-5 cursor-pointer hover:border-2 hover:text-lg transition-all">
+              {/*simple popover for the Developer (Rohit :))*/}
             <Popover>
                 <PopoverTrigger className="flex items-center gap-2">
                   <Image

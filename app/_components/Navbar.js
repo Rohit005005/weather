@@ -4,6 +4,7 @@ import React from "react";
 function Navbar({ state, unit, loc }) {
   return (
     <div className="flex justify-center items-center gap-5 sm:gap-10 mt-5">
+      {/* Select city from the options available*/}
       <select
         id="cars"
         className="text-black bg-transparent border sm:px-10 py-2 rounded-2xl shadow-[0px_0px_400px_0px_#3182ce]"
@@ -18,7 +19,9 @@ function Navbar({ state, unit, loc }) {
           <option value="london">London</option>
         </optgroup>
       </select>
+      {/*Or click this icon to get weather deatils of your city */}
       <MapPinned onClick={()=>loc(prev => !prev)} className="text-gray-700" size={30} />
+        {/*Covert the unit from Celsius to Fahrenheit or viceversa */}
       <select
         id="cars"
         className="text-black bg-transparent border sm:px-10 py-2 rounded-2xl shadow-[0px_0px_400px_0px_#3182ce]"
