@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Welcome
+- Navbar
+![alt text](image.png)
+It conatins three options, select city from the provided options or select your current city by tapping the ![alt text](image-1.png) icon
+
+![alt text](image-2.png)
+![alt text](image-3.png)
 
 ## Getting Started
 
